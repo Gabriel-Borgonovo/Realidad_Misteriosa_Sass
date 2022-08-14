@@ -12,7 +12,7 @@ $siza_h2: 1rem;
     margin: $sin_margin;
 }
 
-@mixin centrado($izquierda, $derecha){
+@mixin centrado(){
     margin-left: auto;
     margin-right: auto;
 }
@@ -23,6 +23,12 @@ $siza_h2: 1rem;
     justify-content: $just_cont;
     align-items: $ali_items;
     flex-wrap: $wrap;
+}
+
+@mixin fondo_imagen(){
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -39,7 +45,6 @@ html{
     scroll-behavior: smooth;
     body{
         @include reseteado(0, 0);
-        background-color: $color_tercero;
     }
 }
 
@@ -189,4 +194,42 @@ img{
 .slider{
     height: 100vh;
     background-color: black;
+    position: relative;
+    .slider_img{
+        background-image: url(../images/pruebas/slider_img.jpg);
+        @include fondo_imagen();
+        height: 100vh;
+        opacity: 1;
+        filter: grayscale(.5), drop-shadow(.9);
+    }
+    .centrar_titulos{
+        position: absolute;
+        width: 100%;
+        bottom: 20%;
+        .title_slider{
+            text-align: center;
+            @include centrado();
+            width: 90%;
+            @include fondo_imagen();
+            background-image: url(../images/pruebas/flama.jpg);
+            filter: grayscale(.3);
+            border-radius: 10px;
+            padding: 50px 0;
+        }
+    }
+}
+
+.title_slider{
+    h1{
+        @include reseteado(0, 0);
+        font-size: 3.2rem;  
+        letter-spacing: 4px;
+        color: $color_secundario;
+    }
+    h2{
+       color: $color_secundario; 
+       font-weight: 100;
+       font-size: 1rem;
+       letter-spacing: 2px;
+    }
 }

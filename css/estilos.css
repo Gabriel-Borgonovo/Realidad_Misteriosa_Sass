@@ -12,8 +12,7 @@ html {
   scroll-behavior: smooth; }
   html body {
     padding: 0;
-    margin: 0;
-    background-color: #595b6e; }
+    margin: 0; }
 
 a {
   text-decoration: none; }
@@ -117,4 +116,42 @@ img {
 /* slider de la página */
 .slider {
   height: 100vh;
-  background-color: black; }
+  background-color: black;
+  position: relative; }
+  .slider .slider_img {
+    background-image: url(../images/pruebas/slider_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    opacity: 1;
+    filter: grayscale(0.5), drop-shadow(0.9); }
+  .slider .centrar_titulos {
+    position: absolute;
+    width: 100%;
+    bottom: 20%; }
+    .slider .centrar_titulos .title_slider {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../images/pruebas/flama.jpg);
+      filter: grayscale(0.3);
+      border-radius: 10px;
+      padding: 50px 0; }
+
+.title_slider h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 3.2rem;
+  letter-spacing: 4px;
+  color: #FFF; }
+
+.title_slider h2 {
+  color: #FFF;
+  font-weight: 100;
+  font-size: 1rem;
+  letter-spacing: 2px; }
