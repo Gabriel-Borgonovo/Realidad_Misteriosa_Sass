@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+        <script src="https://kit.fontawesome.com/5389a2bf4d.js" crossorigin="anonymous"></script> 
+        
+        <link rel="stylesheet" href="css/estilos.css" />
+        <title>Realidad Misteriosa</title>
+    </head>
+    <body>
+    
+        <div class="grid_contiene_todo">
+
+             <!-- Construcción del header y menu superior -->
+
+            <header class="cabecera">
+            <nav class="nav_menu">
+                <div>
+                    <img src="icons/logorm.png" alt="logo" title="logo" class="logo" />
+                </div>
+                <input type="checkbox" id="check" />
+                <label for="check" class="bar_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="ul_menu">
+                    <li class="ul_menu_li"><a class="active" href="index.html" class="inicio">Inicio</a></li>
+                    <li class="ul_menu_li"><a href="historias.html">Historias</a></li>
+                    <li class="ul_menu_li"><a href="foro.html">Foro</a></li>
+                    <li class="ul_menu_li"><a href="#contacto">Contacto</a></li>
+                    <li class="ul_menu_li"><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            </header>
+
+            <!-- construcción del slider -->
+
+            <div class="slider">
+            <div class="imagen_slider">
+                <img src="images/pruebas/pasillo.jpg" alt="pasillo" title="pasillo" />
+            </div>
+            <div class="title neon_container">
+                <h1 class="h1_neon">Realidad Misteriosa</h1>
+                <h2 class="h2_neon">Bienvenidos al portal de lo desconocido</h2>
+            </div> 
+            </div>
+ 
+            <!-- Construccion de las secciones del slider o portada general -->
+
+            <section class="slider_sections">
+                <div class="slider_sections_box box_a">
+                    <a href="#seccion-historias">
+                        <img src="icons/libro.png" alt="libro" />
+                    </a>
+                    <h2>Historias</h2>
+                    <p>
+                        En esta sección encontras historias de sucesos paranormales que vivió gente común como vos o como yo.
+                    </p>
+                </div>
+                <div class="slider_sections_box box_b">
+                    <a href="#pelis">
+                        <img src="icons/pelicula.png" alt="cine" />
+                    </a>
+                    <h2>Recomendaciones</h2>
+                    <p>
+                        Si sos un apasionado en el genero del terror y lo paranormal, tenemos un catalogo de series y películas que no te podes perder.
+                    </p>
+                </div>
+                <div class="slider_sections_box box_c">
+                    <a href="foro.html">
+                        <img src="icons/comentarios.png" alt="comentarios" />
+                    </a>
+                    <h2>Foro</h2> 
+                    <p>
+                        Si alguna vez en tu vida te toco vivir algo sobrenatural, en este espacio podrás compartir tu experiencia con nuestra comunidad.
+                    </p>
+                </div>
+                <div class="slider_sections_box box_d">
+                    <a href="#q-somos">
+                        <img class="man" src="icons/man.png" alt="hombre" title="hombre" />
+                    </a>
+                    <h2>Quienes somos</h2>
+                    <p>
+                        Somos un grupo de expertos apasionados en la investigación de los sucesos paranormales.
+                    </p>
+                </div> 
+            </section>
+
+            <!-- Primera sección (Historia destacada) -->
+
+            <section class="section_main">
+
+                <div class="image_main_section">
+                    <img src="images/mujer_fantasma.jpg" alt="la_novia_y_el_taxi" title="la_novia_y_el_taxi"/>
+                </div>
+
+                <div class="text_main_section">
+                    <h2>La novia y el taxi</h2>
+                    <p>
+                        Prepárate, tengo una grande que contarte. Así, sorprendentemente me dijo mi amigo un día, y yo como siempre creyendo que está a un límite de enloquecer, estoy casi convencido de estar en lo cierto. Keyco y yo somos amigos por lo menos, desde que tengo memoria. Nos conocemos suficiente, su cara estaba pálida cuando...
+                    </p>
+                    <a href="historias.html#la_novia_his1">Leer más</a>
+                </div>
+                
+            </section>
+
+            <main>
+
+            <!-- segunda sección de historias recientes -->
+    
+            <section id="seccion-historias" class="h_recientes">
+                
+                    <article class="grid_a con_flex">
+                        
+                        <div class="grid_a_img img_abuela">
+                            <img src="images/casa_abuela.jpg" alt="ruido_en_casa_de_la_abuela" title="ruido_en_casa_de_la_abuela" />
+                        </div>
+                        <div class="grid_a_text styles_text">
+                            <h2 class="title_hr">Historias</h2>
+                            <h3>Ruido en la casa de la abuela</h3>
+                            <p>
+                                De niño solía quedarse a dormir durante las noches en casa de su abuela. Por aquel momento, tenía 10 años y le encantaba como a cualquier niño disfrutar del cálido hogar y comidas exclusivas que su abuela le preparaba. Ella era una mujer que le gustaba...
+                            </p>
+                            <a href="historias.html#ruido_mueble" class="link">Leer más</a>
+                        </div>
+                    </article>
+
+                    <h2 class="title_hr h2">Historias recientes</h2>
+
+                    
+
+                        <article class="grid_b">
+                            <div class="grid_b_img">
+                                <img src="images/km666.jpeg" alt="kilometro_666" title="kilometro_666" />
+                            </div>
+                            <div class="grid_b_text styles_text">
+                                <span>julio 3, 2022</span>
+                                <h3>Kilometro 666</h3>
+                                <p>
+                                    Mucho se ha visto y oído decir a través del folclore popular acerca de rutas y caminos tenebrosos en todas partes del mundo, todas esas historias son particulares en algún sentido por el terror que sintieron los conductores...
+                                </p>
+                                <a href="historias.html#km666">Leer más</a>
+                            </div>
+                        </article>
+
+                        <article class="grid_c">
+                            <div class="grid_c_img">
+                                <img src="images/niña_fantasma_ruta.jpg" alt="niña_misteriosa" title="niña_misteriosa" />
+                            </div>
+                            <div class="grid_c_text styles_text">
+                                <span>julio 3, 2022</span>
+                                <h3>Niña misteriosa</h3>
+                                <p>
+                                    Una familia, compuesta de 2 pequeños niños de 3 y 5 años y sus padres, iban viajando por la carretera hasta que su recorrido fue pausado debido a que uno de sus neumáticos de la parte trasera se averió. El padre por poco...
+                                </p>
+                                <a href="historias.html#niña_misteriosa">Leer más</a>
+                            </div>
+                        </article>
+
+                        <article class="grid_d">
+                            <div class="grid_d_img">
+                                <img src="images/Slender-Man-1.jpg" alt="slender_man" title="slender_man" />
+                            </div>
+                            <div class="grid_d_text styles_text">
+                                <span>julio 3, 2022</span>
+                                <h3>Slender Man</h3>
+                                <p>
+                                    Slender Man (Hombre Delgado, en español) es un ser masculino, posee un cuerpo con brazos y piernas muy delgados y largos. También parece tener de 4 a 8 tentáculos largos y negros que sobresalen de su espalda. Sus brazos se pueden...
+                                </p>
+                                <a href="historias.html#slenderman">Leer más</a>
+                            </div>
+                        </article>
+                
+            </section>
+
+            </main>
+
+            <!-- tercera sección de historias destacadas -->
+
+            <section class="h_destacadas">
+
+                <h2 class="grid_h2">Historias destacadas</h2>
+    
+                <article class="grid_e">
+                    <div class="grid_e_img">
+                        <img src="images/hombre_sueños.webp" alt="hombre_de_los_sueños" title="hombre_de_los_sueños" />
+                    </div>
+                    <div class="styles_text">
+                        <div class="fecha_link styles_text">
+                            <span>Julio 4, 2022</span>
+                            <a href="historias.html#hombre_sueño" class="a">Ir a la historia</a>
+                        </div>
+                        <h3>El hombre de los sueños</h3>
+                        <p>
+                            En enero de 2006, un psiquiatra de Nueva York recibió en su consulta a una de sus pacientes como un día cualquiera. En aquella sesión, la joven le explicó que había soñado en repetidas ocasiones con un hombre...
+                        </p>
+                        <a href="historias.html#hombre_sueño">Leer más</a>
+                    </div>
+                </article>
+    
+                <article class="grid_f">
+                    <div class="grid_f_img">
+                        <img src="images/visitante-nocturno.jpg" alt="visitante_nocturno" title="visitante_nocturno" />
+                    </div>
+                    <div class="styles_text">
+                        <div class="fecha_link styles_text">
+                            <span>Julio 4, 2022</span>
+                            <a href="historias.html#visitante_nocturno" class="a">Ir a la historias</a>
+                        </div>
+                        <h3>El visitante nocturno</h3>
+                        <p>
+                            Leonor se mudaba de nuevo. A su madre le encantaba la restauración, así que su predilección por las casas antiguas empujaba a la familia a llevar una vida más bien nómada. Era la primera noche que dormían allí y, como siempre, su madre...
+                        </p>
+                        <a href="historias.html#visitante_nocturno">Leer más</a>
+                    </div>
+                </article>
+    
+                <article class="grid_g">
+                    <div class="grid_g_img">
+                        <img src="images/gemelas_fantasma.jpg" alt="las_gemelas" title="las_gemelas" />
+                    </div>
+                    <div class="styles_text">
+                        <div class="fecha_link styles_text">
+                            <span>Julio 4, 2022</span>
+                            <a href="historias.html#gemelas" class="a">Ir a la historias</a>
+                        </div>
+                        <h3>Las gemelas</h3>
+                        <p>
+                            Les preparó el almuerzo y salieron a la calle apresuradas. Como cada día, llevaba a sus hijas gemelas al colegio. Caminaban tarareando una canción y cogidas de la mano cuando el teléfono sonó desde su bolso. Era del trabajo. Respondió rápidamente...
+                        </p>
+                        <a href="historias.html#gemelas">Leer más</a>
+                    </div>
+                </article>
+    
+            </section>
+       
+
+            <!-- cuarta sección (quienes somos) -->
+
+            <section id="q-somos" class="qs">
+            <div class="image_qs_section">
+                <img src="images/quienes-somos.jpg" alt="quienes_somos" title="quienes_somos" />
+            </div>
+            <div class="text_qs_section">
+                <h2>¿Quienes somos?</h2>
+                <p>
+                    Somos un grupo de personas reunidas con la misión de recopilar, entrevistar, investigar y visibilizar distintos sucesos paranormales en lugares considerados malditos, relatos de personas que han vivenciado alguna situación que escapa de la lógica humana, mitos y leyendas urbanas, etc.  
+                </p>
+                <a href="#colaboradores">Colaboradores</a>
+            </div>
+            </section>
+
+            <!-- Quinta sección colaboradores -->
+
+            <section id="colaboradores" class="colaboradores">
+
+            <div class="colaboradores_titulos">
+                <h2>Colaboradores</h2>
+                <h3>nuestro equipo</h3>
+            </div>
+           
+            <div class="grid_colab">
+                <article class="colaboradores_article col_a">
+                    <div class="colaboradores_img">
+                        <img src="images/colaborador1_bruce.jpg" alt="colaborador-1" title="colaborador-1" />
+                    </div>
+                    <div class="colaboradores_text">
+                        <h4>Ash Williams</h4>
+                        <p>
+                            Es el lider indiscutible del equipo, dotado de una inteligencia brillante y de una valentia inspiradora, guía al equipo en la toma de las mejores desiciones.
+                        </p>
+                    </div>
+                </article>
+                <article class="colaboradores_article col_b">
+                    <div class="colaboradores_img">
+                        <img src="images/colaborador2_jemma.jpg" alt="colaborador-2" title="colaborador-2" />
+                    </div>
+                    <div class="colaboradores_text">
+                        <h4>Jemma Simons</h4>
+                        <p>
+                            Es la científica del grupo. Ella es la encargada de discernir que sucesos son paranormales y cuales no, ya que estos pueden ser explicados a través de la ciencia.
+                        </p>
+                    </div>
+                </article>
+                <article class="colaboradores_article col_c">
+                    <div class="colaboradores_img">
+                        <img src="images/colaborador3_padre_McFeeli.png" alt="colaborador-3" title="colaborador-3" />
+                    </div>
+                    <div class="colaboradores_text">
+                        <h4>Padre McFeely</h4>
+                        <p>
+                            Él es el religioso del grupo, ayuda a todos los miembros a mantenerse unidos y en el camino correcto, lejos de todo mal. Tiene una moral y una ética ejemplares.
+                        </p>
+                    </div>
+                </article>
+                <article class="colaboradores_article col_d">
+                    <div class="colaboradores_img">
+                        <img src="images/colaborador4_kelly.jpg" alt="colaborador-4" title="colaborador-4" />
+                    </div>
+                    <div class="colaboradores_text">
+                        <h4>Kelly Maxwell</h4>
+                        <p>
+                            Ella es la aventurera, algunas veces escapa del camino de la cordura y roza todos los límites, pero es una miembro esencial en el grupo debido a su falta de miedo e iniciativa.
+                        </p>
+                    </div>
+                </article> 
+            </div>
+
+            </section>
+
+            <!-- construcción de la parte lateral (al costado derecho) -->
+
+            <aside>
+
+            <!-- construcción del buscador -->
+            <div class="busqueda">
+                <form action="index.html" method="get">
+                    <input type="search" placeholder="Has tu búsqueda" id="buscar" />
+                    <div class="boton_busqueda">
+                        <input type="submit" value="Buscar" id="lupa" />
+                    </div>
+                </form>
+            </div>
+
+            <!-- construcción de las categorías -->
+            <section id="categorias" class="categorias">
+                <h2>Categorias</h2>
+                <div class="enlaces">
+                    <a href="historias.html" class="fantasma">Fantasmas</a>
+                    <a href="historias.html" class="demonio">Demonios</a>
+                    <a href="historias.html" class="brujeria">Brujería</a>
+                    <a href="historias.html" class="internet">Internet</a>
+                    <a href="historias.html" class="lugares">Lugares Malditos</a>
+                    <a href="historias.html" class="muñeco">Muñecos Malditos</a>
+                    <a href="historias.html" class="casa">Casa Embrujada</a>
+                </div>
+            </section>
+
+            <!-- Construcción de sección peliculas recomendadas -->
+
+            <section id="pelis" class="recomendadas">
+                <h2 class="h2_recomendadas">Películas y series recomendadas</h2>
+                <article class="recomendadas_article">
+                    <div class="recomendadas_cont_img">
+                        <img src="images/the_strain.jpg" alt="the_strain" title="the_strain" />
+                    </div>
+                    <div class="recomendadas_cont_text">
+                        <h3>The Strain (La plaga)</h3>
+                        <span>Julio 4, 2022</span>
+                        <a href="#">Ver trailer</a>
+                    </div>
+                </article>
+                <article class="recomendadas_article">
+                    <div class="recomendadas_cont_img">
+                        <img src="images/st.jpg" alt="stranger_things" title="stranger_things" />
+                    </div>
+                    <div class="recomendadas_cont_text">
+                        <h3>Stranger Things</h3>
+                        <span>Julio 4, 2022</span>
+                        <a href="#">Ver trailer</a>
+                    </div>
+                </article>
+                <article class="recomendadas_article">
+                    <div class="recomendadas_cont_img">
+                        <img src="images/ElConjuro2.webp" alt="el_conjuro" title="el_conjuro" />
+                    </div>
+                    <div class="recomendadas_cont_text">
+                        <h3>El Conjuro</h3>
+                        <span>Julio 4, 2022</span>
+                        <a href="#">Ver trailer</a>
+                    </div>
+                </article>
+                <article class="recomendadas_article">
+                    <div class="recomendadas_cont_img">
+                        <img src="images/aved.jpg" alt="ash_vs_evil_dead" title="ash_vs_evil_dead" />
+                    </div>
+                    <div class="recomendadas_cont_text">
+                        <h3>Ash vs Evil Dead</h3>
+                        <span>Julio 4, 2022</span>
+                        <a href="#">Ver trailer</a>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Espacio vacío para publicidad -->
+
+            <div class="publicidad"><p>acá va a ir la publicidad</p></div>
+
+            <!-- sección de redes sociales -->
+
+            <section class="redes">
+                <h2 class="h2_redes">Seguinos en las redes</h2>
+                <ul class="redes_ul">
+                    <li class="redes_li"><a href="https://www.facebook.com/" target="_blank" class="facebook">Faceebook</a></li> 
+                    <li class="redes_li"><a href="https://www.youtube.com/" target="_blank" class="youtube">Youtube</a></li>
+                    <li class="redes_li"><a href="https://www.instagram.com/" target="_blank" class="instagram">Instagram</a></li>
+                    <li class="redes_li"><a href="https://web.telegram.org/k/" target="_blank" class="telegram">Telegram</a></li>
+                    <li class="redes_li"><a href="https://www.tiktok.com/es/" target="_blank" class="tiktok">TikTok</a></li>
+                    <li class="redes_li"><a href="https://twitter.com/?lang=es" target="_blank" class="twitter">Twitter</a></li>
+                </ul>
+            </section>
+
+            </aside>
+
+            <!-- Pie de página -->
+
+            <footer class="footer">
+            <div class="footer_links">
+                <h2>Enlaces de la página</h2>
+                <ul class="footer_links_ul">
+                    <li class="footer_links_li"><a href="index.html">Inicio</a></li>
+                    <li class="footer_links_li"><a href="historias.html">Historias</a></li>
+                    <li class="footer_links_li"><a href="foro.html">Foro</a></li>
+                    <li class="footer_links_li"><a href="login.html">Login</a></li>
+                    <li class="footer_links_li"><a href="#q-somos">Quienes somos</a></li>
+                    <li class="footer_links_li"><a href="#categorias">Categorias</a></li>
+                    <li class="footer_links_li"><a href="#pelis">Recomendaciones</a></li>
+                </ul>
+
+                <ul class="redes_ul pie_pag">
+                    <li class="redes_li shadow"><a href="https://www.facebook.com/" target="_blank" class="facebook">Faceebook</a></li> 
+                    <li class="redes_li shadow"><a href="https://www.youtube.com/" target="_blank" class="youtube">Youtube</a></li>
+                    <li class="redes_li shadow"><a href="https://www.instagram.com/" target="_blank" class="instagram">Instagram</a></li>
+                    <li class="redes_li shadow"><a href="https://web.telegram.org/k/" target="_blank" class="telegram">Telegram</a></li>
+                    <li class="redes_li shadow"><a href="https://www.tiktok.com/es/" target="_blank" class="tiktok">TikTok</a></li>
+                    <li class="redes_li shadow"><a href="https://twitter.com/?lang=es" target="_blank" class="twitter">Twitter</a></li>
+                </ul>
+
+                <div class="copyright">
+                    <p>copyright <strong>Gabriel Borgonovo</strong></p>
+                </div>
+
+            </div>
+             
+            <div class="formulario">
+                <h2 id="contacto">Escribinos por mail</h2>
+                <form action="index.html" id="form_mail" class="form_mail">
+                    <div class="campos">
+                        <label for="email" class="etiqueta">Email:</label>
+                        <input type="email" placeholder="ej:tunombre@gmail.com" name="email" id="email" required class="campo_text campo" />
+                    </div>
+                    <div class="campos">
+                        <label for="motivo" class="etiqueta">Motivo:</label>
+                        <input type="text" placeholder="motivo" name="motivo" id="motivo" required class="campo_text campo" />
+                    </div>
+                    <div class="campos">
+                        <label for="mensaje" class="etiqueta">Mensaje:</label>
+                        <textarea cols="30" rows="5" placeholder="Tu mensaje" name="mensaje" id="mensaje" required class="campo_text mensaje"></textarea>
+                    </div>
+                    <input type="submit" class="boton_enviar" />
+                </form> 
+            </div>
+            
+            <div class="contiene_whatsapp">
+                <a href="https://web.whatsapp.com/" target="_blank" class="whatsapp">Whatsapp</a>
+            </div>
+
+            </footer>
+
+        </div>
+       
+    </body>
+</html>

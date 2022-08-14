@@ -1,0 +1,109 @@
+$color_primario: rgb(19, 16, 20);
+$color_secundario: #FFF;
+$color_tercero: rgb(89, 91, 110);
+$size_h1: 2.5rem;
+$siza_h2: 1rem;
+
+/*mixins*/
+
+@mixin caja_flexible($direction ,$just_cont, $ali_items, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $just_cont;
+    align-items: $ali_items;
+    flex-wrap: $wrap;
+}
+
+/*Estilos generales*/
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: $color_tercero;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Grilla que ordena la página*/
+
+.grid_contiene_todo{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "header header header header header header"
+                         "imagen_s imagen_s imagen_s imagen_s imagen_s imagen_s"
+                         "slider slider slider slider slider slider"
+                         "section section section section section section"
+                         "aside aside aside aside aside aside" 
+                         "main main main main main main"
+                         "h_dest h_dest h_dest h_dest h_dest h_dest"
+                         "quie_s quie_s quie_s quie_s quie_s quie_s"
+                         "col col col col col col"
+                         "footer footer footer footer footer footer" ;
+    .cabecera{
+        grid-area: header;
+    }
+                        
+    .slider{
+        grid-area: imagen_s;
+    }
+                        
+    .slider_sections{
+        grid-area: slider;
+    }
+                        
+    main{
+        grid-area: main;
+    }
+                        
+    aside{
+        grid-area: aside;
+    }
+                        
+    footer{
+        grid-area: footer;
+    }
+                        
+    .section_main{
+         grid-area: section;
+    }
+                        
+    .qs{
+        grid-area: quie_s;
+    }
+                        
+    .colaboradores{
+        grid-area: col;
+    }
+                        
+    .h_destacadas{
+        grid-area: h_dest;
+    }
+}
+
+
+
+img{
+    width: 150px;
+    height: auto;
+}
+
+.cabecera{
+    background-color: $color_primario;
+}
+
+.nav_menu{
+   @include caja_flexible(row, space-between, center, nowrap);
+}
