@@ -5,14 +5,14 @@
   box-sizing: border-box; }
 
 html {
-  margin: 0;
   padding: 0;
+  margin: 0;
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth; }
   html body {
-    margin: 0;
     padding: 0;
+    margin: 0;
     background-color: #595b6e; }
 
 a {
@@ -44,6 +44,8 @@ a {
   .grid_contiene_todo .h_destacadas {
     grid-area: h_dest; }
 
+/*Estilos a elementos particulares*/
+/* Menu principal */
 img {
   width: 150px;
   height: auto; }
@@ -56,4 +58,63 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  position: fixed;
+  width: 100%;
+  height: 56px;
+  z-index: 10;
+  background-color: #131014; }
+  .nav_menu .bar_btn {
+    font-size: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #FFF; }
+
+.logo {
+  width: 140px;
+  margin-left: 20px; }
+
+.ul_menu {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  height: 0;
+  top: 56px;
+  background-color: rgba(19, 16, 20, 0.6);
+  text-align: center;
+  transition: all .5s;
+  z-index: 10; }
+  .ul_menu .ul_menu_li {
+    list-style: none;
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s; }
+    .ul_menu .ul_menu_li a {
+      color: #FFF;
+      text-decoration: none;
+      font-size: 1rem;
+      letter-spacing: 2px;
+      display: block;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: color .5s ease; }
+    .ul_menu .ul_menu_li a:hover {
+      color: red; }
+
+/*funcionamiento menu hamburguesa al hacer click sobre él*/
+#check {
+  display: none; }
+
+#check:checked ~ .ul_menu {
+  height: 100vh; }
+
+#check:checked ~ .ul_menu .ul_menu_li {
+  display: block; }
+
+/* slider de la página */
+.slider {
+  height: 100vh;
+  background-color: black; }

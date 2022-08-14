@@ -1,10 +1,21 @@
 $color_primario: rgb(19, 16, 20);
 $color_secundario: #FFF;
 $color_tercero: rgb(89, 91, 110);
+$color_cuarto: rgba(19, 16, 20, 0.6);
 $size_h1: 2.5rem;
 $siza_h2: 1rem;
 
 /*mixins*/
+
+@mixin reseteado($sin_padding, $sin_margin) {
+    padding: $sin_padding;
+    margin: $sin_margin;
+}
+
+@mixin centrado($izquierda, $derecha){
+    margin-left: auto;
+    margin-right: auto;
+}
 
 @mixin caja_flexible($direction ,$just_cont, $ali_items, $wrap) {
     display: flex;
@@ -14,6 +25,7 @@ $siza_h2: 1rem;
     flex-wrap: $wrap;
 }
 
+
 /*Estilos generales*/
 
 *{
@@ -21,14 +33,12 @@ $siza_h2: 1rem;
 }
 
 html{
-    margin: 0;
-    padding: 0;
+    @include reseteado(0, 0);
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
     body{
-        margin: 0;
-        padding: 0;
+        @include reseteado(0, 0);
         background-color: $color_tercero;
     }
 }
@@ -93,7 +103,8 @@ a{
     }
 }
 
-
+/*Estilos a elementos particulares*/
+/* Menu principal */
 
 img{
     width: 150px;
@@ -106,4 +117,76 @@ img{
 
 .nav_menu{
    @include caja_flexible(row, space-between, center, nowrap);
+   position: fixed;
+   width: 100%;
+   height: 56px;
+   z-index: 10;
+   background-color: $color_primario;
+   .bar_btn{
+        font-size: 25px;
+        margin-right: 20px;
+        cursor: pointer;
+        color: $color_secundario;
+   }
+}
+
+.logo{
+    width: 140px;
+    margin-left: 20px;
+}
+
+.ul_menu{
+    @include reseteado(0, 0);
+    position: fixed;
+    width: 100%;
+    height: 0;
+    top: 56px;
+    background-color: $color_cuarto;
+    text-align: center;
+    transition: all .5s;
+    z-index: 10;
+    .ul_menu_li{
+        list-style: none;
+        display: none;
+        line-height: 30px;
+        margin: 50px 0;
+        transition: all .5s;
+        a{
+            color: $color_secundario;
+            text-decoration: none;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            display: block;
+            width: 100%;
+            text-transform: uppercase; 
+            font-weight: 500;
+            transition: color .5s ease;
+        }
+       a:hover{
+            color: red;
+       }
+    }
+    
+}
+
+
+/*funcionamiento menu hamburguesa al hacer click sobre él*/
+
+#check{
+    display: none;
+}
+
+#check:checked ~.ul_menu{
+    height: 100vh;
+}
+
+#check:checked ~ .ul_menu .ul_menu_li{
+    display: block;
+}
+
+/* slider de la página */
+
+.slider{
+    height: 100vh;
+    background-color: black;
 }
