@@ -371,7 +371,7 @@ aside{
     @include caja_flexible(column, center, center, nowrap);
     width: 90%;
     max-width: 345px;
-    margin-top: 35px;
+    margin-bottom: 100px;
     @include centrado();
     background-color: $color_tercero;
     padding-bottom: 50px;
@@ -398,7 +398,7 @@ aside{
         width: 90%;
         max-width: 350px;
         height: 35px;
-        background-color: $color_cuarto;
+        background-color: $color_primario;
         color: $color_secundario;
         font-size: 16px;
         border: 3px solid $color_quinto;
@@ -474,6 +474,7 @@ aside{
 
 .recomendadas{
     width: 80%;
+    margin-bottom: 70px;
     @include caja_flexible(column, center, center, nowrap);
     gap: 10px;
 }
@@ -531,6 +532,47 @@ aside{
     background-color: $color_quinto;
     transform: rotate(2deg);
 }
+
+/* sección aside publicidad */
+
+.publicidad{
+    width: 90%;
+    height: 200px;
+    background-color: $color_secundario;
+    margin-bottom: 70px;
+    @include caja_flexible(column, center, center, nowrap);
+    box-shadow: 5px 5px 5px $color_sombra;
+    p{
+        color: $color_primario;
+    }
+}
+
+/* sección aside redes */
+
+.redes{
+    width: 100%;
+    text-align: center;
+}
+
+.redes_ul{
+    @include reseteado(0, 0);
+    background-color: $color_primario;
+    padding: 10px 0;
+    list-style: none;
+    @include caja_flexible(row, space-evenly, center, nowrap);
+    .redes_li{
+        a{
+            color: $color_secundario;
+            font-size: 30px;
+            transition: color .7s ease;
+        }
+        a:hover{
+            color: $color_quinto;
+        }
+    }
+}
+
+
 
 
 
