@@ -118,6 +118,7 @@ img{
 }
 
 .cabecera{
+    width: 100%;
     background-color: $color_primario;
 }
 
@@ -578,8 +579,8 @@ aside{
     @include centrado();
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 50px;
-    gap: 30px;
+    margin-bottom: 70px;
+    gap: 20px;
     grid-template-areas: "hr_a hr_a hr_a hr_a"
                          "title title title ."
                          "hr_b hr_b hr_c hr_c"
@@ -661,8 +662,72 @@ aside{
     }
 } 
 
+.grid_h2,
+.title_hr{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 
 
+ /* sección de historias destacadas */
 
+ .h_destacadas{
+    width: 90%;
+    margin-bottom: 70px;
+    @include centrado();
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-areas: "h2_hd h2_hd h2_hd h2_hd"
+                         "hd_a hd_a hd_a hd_a"
+                         "hd_b hd_b hd_c hd_c";
+
+    .grid_h2{
+        grid-area: h2_hd;
+    }
+    .grid_e{
+        grid-area: hd_a;
+     }
+    .grid_f{
+        grid-area: hd_b;
+     }
+    .grid_g{
+        grid-area: hd_c;
+     }
+}
+
+.grid_e,
+.grid_f,
+.grid_g{
+    @include caja_flexible(column, baseline, center, nowrap);
+    box-shadow: 0px 10px 10px $color_sombra; 
+    img{
+        width: 100%;
+    }
+}
+
+.grid_f,
+.grid_g{
+    img{
+        height: 190px;
+    }
+}
+
+.altura_text{
+    width: 100%;
+    @include caja_flexible(column, start, start, nowrap);
+    .fecha_link{
+        width: 100%;
+        height: fit-content;
+        @include caja_flexible(row, start, baseline, wrap); 
+        gap: 10px; 
+        padding:10px 0;
+    }
+}
+
+                        
+                        
 
  
+

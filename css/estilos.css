@@ -50,6 +50,7 @@ img {
   height: auto; }
 
 .cabecera {
+  width: 100%;
   background-color: #131014; }
 
 .nav_menu {
@@ -475,8 +476,8 @@ aside {
   margin-right: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 50px;
-  gap: 30px;
+  margin-bottom: 70px;
+  gap: 20px;
   grid-template-areas: "hr_a hr_a hr_a hr_a" "title title title ." "hr_b hr_b hr_c hr_c" "hr_b hr_b hr_c hr_c" "hr_d hr_d hr_d hr_d"; }
   .h_recientes .grid_a {
     grid-area: hr_a; }
@@ -544,3 +545,64 @@ aside {
     letter-spacing: .5px;
     color: #0a85f8;
     text-decoration: none; }
+
+.grid_h2,
+.title_hr {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+/* sección de historias destacadas */
+.h_destacadas {
+  width: 90%;
+  margin-bottom: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  grid-template-areas: "h2_hd h2_hd h2_hd h2_hd" "hd_a hd_a hd_a hd_a" "hd_b hd_b hd_c hd_c"; }
+  .h_destacadas .grid_h2 {
+    grid-area: h2_hd; }
+  .h_destacadas .grid_e {
+    grid-area: hd_a; }
+  .h_destacadas .grid_f {
+    grid-area: hd_b; }
+  .h_destacadas .grid_g {
+    grid-area: hd_c; }
+
+.grid_e,
+.grid_f,
+.grid_g {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  flex-wrap: nowrap;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5); }
+  .grid_e img,
+  .grid_f img,
+  .grid_g img {
+    width: 100%; }
+
+.grid_f img,
+.grid_g img {
+  height: 190px; }
+
+.altura_text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: nowrap; }
+  .altura_text .fecha_link {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0; }
