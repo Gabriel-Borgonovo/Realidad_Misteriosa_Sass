@@ -581,8 +581,9 @@ aside{
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 70px;
     gap: 20px;
-    grid-template-areas: "hr_a hr_a hr_a hr_a"
-                         "title title title ."
+    grid-template-areas: "title title title ."
+                         "hr_a hr_a hr_a hr_a"
+                         "titulo_b titulo_b titulo_b ."
                          "hr_b hr_b hr_c hr_c"
                          "hr_b hr_b hr_c hr_c"
                          "hr_d hr_d hr_d hr_d";
@@ -601,8 +602,13 @@ aside{
     .grid_d{
         grid-area: hr_d;
     } 
+
     .title_hr{
         grid-area: title;
+    }  
+
+    .title_hr_b{
+        grid-area: titulo_b;
     }                      
 }
 
@@ -662,6 +668,7 @@ aside{
     }
 } 
 
+.title_hr_b,
 .grid_h2,
 .title_hr{
     font-size: 16px;

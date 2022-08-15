@@ -478,7 +478,7 @@ aside {
   grid-template-columns: repeat(4, 1fr);
   margin-bottom: 70px;
   gap: 20px;
-  grid-template-areas: "hr_a hr_a hr_a hr_a" "title title title ." "hr_b hr_b hr_c hr_c" "hr_b hr_b hr_c hr_c" "hr_d hr_d hr_d hr_d"; }
+  grid-template-areas: "title title title ." "hr_a hr_a hr_a hr_a" "titulo_b titulo_b titulo_b ." "hr_b hr_b hr_c hr_c" "hr_b hr_b hr_c hr_c" "hr_d hr_d hr_d hr_d"; }
   .h_recientes .grid_a {
     grid-area: hr_a; }
   .h_recientes .grid_b {
@@ -489,6 +489,8 @@ aside {
     grid-area: hr_d; }
   .h_recientes .title_hr {
     grid-area: title; }
+  .h_recientes .title_hr_b {
+    grid-area: titulo_b; }
 
 .grid_a,
 .grid_b,
@@ -546,6 +548,7 @@ aside {
     color: #0a85f8;
     text-decoration: none; }
 
+.title_hr_b,
 .grid_h2,
 .title_hr {
   font-size: 16px;
