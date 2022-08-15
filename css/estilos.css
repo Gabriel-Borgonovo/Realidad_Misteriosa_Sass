@@ -271,3 +271,50 @@ img {
   background-color: #FFF;
   color: black;
   font-weight: 600; }
+
+/* Estilos al aside */
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 90%;
+  max-width: 345px;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #595b6e;
+  padding-bottom: 50px;
+  border-radius: 20px; }
+
+.busqueda {
+  width: 90%;
+  max-width: 350px;
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px; }
+  .busqueda #buscar {
+    width: 90%;
+    max-width: 350px;
+    height: 35px;
+    background-color: rgba(19, 16, 20, 0.6);
+    color: #FFF;
+    font-size: 16px;
+    border: 3px solid #0a85f8;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    position: relative; }
+  .busqueda .boton_busqueda i {
+    color: #FFF;
+    position: absolute;
+    font-size: 30px; }
+  .busqueda .boton_busqueda input {
+    font-size: 5px;
+    opacity: 0;
+    cursor: pointer; }

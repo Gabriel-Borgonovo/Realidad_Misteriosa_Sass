@@ -2,6 +2,8 @@ $color_primario: rgb(19, 16, 20);
 $color_secundario: #FFF;
 $color_tercero: rgb(89, 91, 110);
 $color_cuarto: rgba(19, 16, 20, 0.6);
+$color_quinto: rgb(10, 133, 248);
+$color_sombra:rgba(0, 0, 0, 0.5);
 $size_h1: 2.5rem;
 $siza_h2: 1rem;
 
@@ -362,6 +364,53 @@ img{
         font-weight: 600;
      }
 }
+
+/* Estilos al aside */
+
+aside{
+    @include caja_flexible(column, center, center, nowrap);
+    width: 90%;
+    max-width: 345px;
+    margin-top: 35px;
+    @include centrado();
+    background-color: $color_tercero;
+    padding-bottom: 50px;
+    border-radius: 20px;
+}
+
+.busqueda{
+    width: 90%;
+    max-width: 350px;
+    position: relative;
+    margin-top: 30px;
+    @include caja_flexible(row, center, center, nowrap);
+    gap: 10px;
+    #buscar{
+        width: 90%;
+        max-width: 350px;
+        height: 35px;
+        background-color: $color_cuarto;
+        color: #FFF;
+        font-size: 16px;
+        border: 3px solid $color_quinto;
+        box-shadow: 5px 5px 5px $color_sombra;
+        border-radius: 5px;
+        position: relative;
+    }
+    .boton_busqueda{
+        i{
+            color: $color_secundario;
+            position: absolute;
+            font-size: 30px;
+        }
+        input{
+            font-size: 5px;
+            opacity: 0;
+            cursor: pointer;
+        }
+    }
+}
+
 
 
 
