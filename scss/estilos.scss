@@ -221,7 +221,7 @@ img{
     .centrar_titulos{
         position: absolute;
         width: 100%;
-        bottom: 20%;
+        bottom: 35%;
         .title_slider{
             text-align: center;
             @include centrado();
@@ -330,17 +330,11 @@ img{
         width: 100%;
         grid-column: 2/6;
         grid-row: 4/7;
-        background-color: rgba(0, 0, 0, 0.6);
-        backdrop-filter:blur(10px);
+        background-color: $color_primario;
         color: $color_secundario;
         padding: 0 20px;
         @include caja_flexible(column, center, center, nowrap);
-        border: 2px solid rgba(255, 255, 255, 0.164);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-        transition: background-color 1s linear;
-     }
-     .text_main_section:hover{
-        background-color: $color_primario;
+        box-shadow: 7px 7px 10px $color_sombra;
      }
  }
 
@@ -801,12 +795,12 @@ aside{
         margin: 10px 0;
         border: 2px solid $color_secundario;
         transition: all .5s ease;
+        &:hover{
+            background-color: $color_secundario;
+            color: $color_primario;
+            font-weight: 600;
+         }    
      }
-     a:hover{
-        background-color: $color_quinto;
-        color: $color_primario;
-        font-weight: 600;
-     }    
  }
 
 
@@ -885,7 +879,6 @@ footer{
 }
 
 .redes_foot{
-    background-color: $color_tercero;
     max-width: 500px;
 }
 
@@ -951,7 +944,59 @@ footer{
     }
 }
 
+/*Estilos a los links del footer*/
 
+.footer_links{
+    @include caja_flexible(column, center, center, nowrap);
+    gap: 20px;
+    width: 100%;
+    margin-top: 70px;
+    h2{
+        color: $color_secundario;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        @include reseteado(0, 0); 
+        text-transform: uppercase;
+    }
+}
 
+.footer_links_ul{
+    @include caja_flexible(row, center, center, wrap);
+    list-style: none;
+    gap: 20px;
+    margin-bottom: 50px;
+    @include reseteado(0, 0); 
+}
 
+.footer_links_li{
+    a{
+        color: $color_quinto;
+        font-size: 18px;
+        transition: color .3s linear;
+        &:hover{
+            color: $color_secundario;
+        }
+    }
+}
 
+.copyright{
+    color: $color_secundario;
+    margin-bottom: 50px;
+}
+
+.contiene_whatsapp{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+ .contiene_whatsapp > .whatsapp{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../icons/whatsapp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 0;
+ }
