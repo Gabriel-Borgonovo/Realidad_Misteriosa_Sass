@@ -675,3 +675,41 @@ aside {
   background-color: #0a85f8;
   color: #131014;
   font-weight: 600; }
+
+/*Acomodando la sección de colaboradores*/
+.colaboradores {
+  background-color: #131014;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .colaboradores .grid_colab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; }
+
+.colaboradores_article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 40%;
+  background-color: #FFF; }
+  .colaboradores_article img {
+    width: 100%;
+    height: 200px; }
+
+.colaboradores_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .colaboradores_text p {
+    padding: 0;
+    margin: 0; }

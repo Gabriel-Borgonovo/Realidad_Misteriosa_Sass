@@ -801,6 +801,34 @@ aside{
      }    
  }
 
+
+ /*Acomodando la sección de colaboradores*/
+
+ .colaboradores{
+    background-color: $color_primario;
+    @include caja_flexible(column, center, center, nowrap);
+    .grid_colab{
+        @include caja_flexible(row, center, center, wrap); 
+        gap: 20px;
+    }
+ }
+
+ .colaboradores_article{
+    @include caja_flexible(column, center, center, nowrap); 
+    width: 40%;
+    background-color: $color_secundario;
+    img{
+        width: 100%;
+        height: 200px;
+    }
+ }
+
+ .colaboradores_text{
+    @include caja_flexible(column, center, center, nowrap); 
+    p{
+        @include reseteado(0, 0);
+    }
+}
  
  
                         
