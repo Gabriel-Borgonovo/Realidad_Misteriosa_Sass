@@ -180,12 +180,12 @@ img{
             display: block;
             width: 100%;
             text-transform: uppercase; 
-            font-weight: 500;
+            font-weight: 700;
             transition: color .5s ease;
+            &:hover{
+                color: $color_quinto;
+           }
         }
-       a:hover{
-            color: red;
-       }
     }
     
 }
@@ -219,23 +219,22 @@ img{
         filter: grayscale(.5), drop-shadow(.9);
     }
     .centrar_titulos{
-        position: absolute;
+        position: relative;
         width: 100%;
-        bottom: 35%;
-        .title_slider{
-            text-align: center;
-            @include centrado();
-            width: 90%;
-            @include fondo_imagen();
-            background-image: url(../images/pruebas/flama.jpg);
-            filter: grayscale(.3);
-            border-radius: 10px;
-            padding: 50px 0;
-        }
+        bottom: 75%;
     }
 }
 
+
 .title_slider{
+    text-align: center;
+    @include centrado();
+    width: 90%;
+    @include fondo_imagen();
+    background-image: url(../images/pruebas/flama.jpg);
+    filter: grayscale(.3);
+    border-radius: 10px;
+    padding: 50px 0;
     h1{
         @include reseteado(0, 0);
         font-size: 3.2rem;  
@@ -1000,3 +999,288 @@ footer{
     background-size: cover;
     font-size: 0;
  }
+
+
+ /* Reglas o Media queries */
+
+@media screen and (min-width: 760px) {
+    .logo{
+        margin-left: 50px;
+    }
+
+
+    .bar_btn{
+        display: none;
+    }
+
+    .ul_menu{
+        @include caja_flexible(row, space-evenly, center, nowrap);
+        position: relative;
+        z-index: 30;
+        height: 50px;
+        top: 0;
+        background-color: $color_primario;
+        max-width: 500px;
+        transition: none;
+        .ul_menu_li{
+            display: block;
+            transition: none;
+            a{
+                color: #FFF;
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .slider_sections{
+        width: 70%;
+    }
+
+    .grid_contiene_todo{
+        grid-template-areas: "header header header header header header"
+                             "imagen_s imagen_s imagen_s imagen_s imagen_s imagen_s"
+                              "slider slider slider slider slider slider"
+                              "section section section section section section"
+                              "main main main aside aside aside" 
+                              "main main main . . ."
+                              "h_dest h_dest h_dest h_dest h_dest h_dest"
+                              "quie_s quie_s quie_s quie_s quie_s quie_s"
+                              "col col col col col col"
+                              "footer footer footer footer footer footer";
+    }
+
+    .slider{
+        .centrar_titulos{
+            width: 70%;
+            padding: 30px;
+            @include centrado();
+            text-align: center;
+        }
+    }
+  
+    .title_slider{
+        @include centrado();
+    }
+
+    /*Sección principal*/
+    
+    .section_main{
+        width: 90%;
+        margin: 70px auto;
+        .image_main_section{
+            grid-column: 1/6;
+            grid-row: 1/7;
+        }
+    
+        .text_main_section{
+            grid-column: 4/7;
+            grid-row: 2/6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    } 
+
+    .image_main_section > img{
+        width: 100%;
+        max-width: 750px;
+
+    }
+
+    /*aside*/
+
+    aside{
+        width: 100%;
+        margin-top: 60px;
+        max-height: 1950px;
+    }
+
+    .h_recientes{
+        grid-template-areas:"title title title ."
+                            "hr_a hr_a hr_a hr_a"
+                            "titulo_b titulo_b titulo_b ."
+                            "hr_b hr_b hr_b hr_b"
+                            "hr_c hr_c hr_c hr_c"
+                            "hr_d hr_d hr_d hr_d";
+    }
+
+    .h_destacadas{
+        width: 95%;
+        margin-top: 50px;
+        grid-template-areas: "h2_hd h2_hd h2_hd h2_hd"
+                             "hd_a hd_a hd_a hd_a"
+                             "hd_b hd_b hd_b hd_b"
+                             "hd_c hd_c hd_c hd_c";
+    }
+
+    .grid_e,
+    .grid_f,
+    .grid_g{
+        @include caja_flexible(row, flex-start, stretch , nowrap);
+        max-width: 700px;
+        img{
+            width: 250px;
+            height: 220px;
+        }
+    }
+    
+     /* Con esto acomodo los main de las otras paginas que no son de la home */
+
+     .main_foro,
+     .main_registro,
+     .main_login,
+     .main_historias{
+         grid-column: 1/7;
+     }
+ 
+     /*-------------------------------------*/
+
+     /*Sección quienes somos*/
+ 
+     .qs{
+        width: 90%;
+        margin: 90px auto;
+        .image_qs_section{
+            grid-column: 2/7;
+            grid-row: 1/7;
+        }
+        .text_qs_section{
+            grid-column: 1/4;
+            grid-row: 2/6;
+        }
+    }
+
+    .image_qs_section > img{
+        width: 100%;
+    }
+
+
+    /*footer*/
+
+    footer{
+        @include caja_flexible(row, space-evenly, center, nowrap);
+        padding: 50px 0;
+    }
+
+    .formulario{
+        margin-right: 30px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 990px){
+
+    .grid_contiene_todo{
+        grid-template-areas: "header header header header header header"
+                             "imagen_s imagen_s imagen_s imagen_s imagen_s imagen_s"
+                              "slider slider slider slider slider slider"
+                              "section section section section section section"
+                              "main main main main aside aside" 
+                              "h_dest h_dest h_dest h_dest aside aside"
+                              "quie_s quie_s quie_s quie_s quie_s quie_s"
+                              "col col col col col col"
+                              "footer footer footer footer footer footer";
+    }
+
+    .slider_sections{
+        width: 90%;
+        grid-template-areas: "box_a box_b box_c box_d";
+    }
+
+    .section_main{
+        width: 85%;
+        max-width: 900px;
+    }
+
+    .image_main_section {
+        img{
+            width: 100%;
+            height: 100%;
+         }
+     } 
+
+     .con_flex{
+        @include caja_flexible(row-reverse, space-between, stretch, nowrap);
+        gap: 10px;
+    }
+
+    .grid_a_text{
+        width: 70%;
+        @include caja_flexible(column, space-between, flex-start, nowrap);
+    }
+
+    .img_abuela{
+       img{
+        height: 100%;
+       }
+    }
+
+    .h_recientes{
+        grid-template-areas:"title title title ."
+                            "hr_a hr_a hr_a hr_a"
+                            "titulo_b titulo_b titulo_b ."
+                            "hr_b hr_b hr_c hr_c"
+                            "hr_d hr_d . .";
+    }
+
+    .h_destacadas{
+        width: 92%;
+        margin-top: 50px;
+    }
+
+    .qs{
+        width: 85%;
+        max-width: 900px;
+    }
+
+    .colaboradores{
+        .grid_colab{
+            gap: 50px;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1200px){
+
+    .grid_contiene_todo{
+        grid-template-areas: "header header header header header header"
+                             "imagen_s imagen_s imagen_s imagen_s imagen_s imagen_s"
+                              "slider slider slider slider slider slider"
+                              "section section section section section section"
+                              "main main main main aside aside" 
+                              "h_dest h_dest h_dest h_dest aside aside"
+                              ". . . . aside aside"
+                              "quie_s quie_s quie_s quie_s quie_s quie_s"
+                              "col col col col col col"
+                              "footer footer footer footer footer footer";
+    }
+
+    .h_recientes{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:"title title title . . ."
+                            "hr_a hr_a hr_a hr_a hr_a hr_a"
+                            "titulo_b titulo_b titulo_b . . ."
+                            "hr_b hr_b hr_c hr_c hr_d hr_d";
+    }
+
+    .grid_d_img > img{
+        height: 190px; 
+    }
+
+     /* foro */
+
+
+     .aside_foro{
+        width: 100%;
+        max-width: 450px;
+        grid-column: 1/2;
+        margin: 0;
+    }
+
+}
