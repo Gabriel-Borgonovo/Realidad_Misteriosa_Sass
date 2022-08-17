@@ -32,6 +32,20 @@ $color_p: rgb(15, 15, 22);
     background-size: cover;
 }
 
+@mixin campo_estilos($ancho, $alto, $bg_color, $tx_color, 
+$size_tx, $border_size, $border_color, $eje_y, $eje_x, $expand, 
+$color_sombra, $radius, $position){
+    width: $ancho;
+    height: $alto;
+    background-color: $bg_color;
+    color: $tx_color;
+    font-size: $size_tx;
+    border: $border_size solid $border_color;
+    box-shadow: $eje_x $eje_y $expand $color_sombra;
+    border-radius: $radius;
+    position: $position;
+}
+
 
 /*Estilos generales*/
 
@@ -394,17 +408,10 @@ aside{
     margin-bottom: 50px;
     @include caja_flexible(row, center, center, nowrap);
     gap: 10px;
-    #buscar{
-        width: 90%;
+    .campo_busqueda{
+        @include campo_estilos(90%, 35px, $color_primario, $color_secundario,
+        16px , 3px, $color_quinto, 5px, 5px, 5px, $color_sombra, 5px, relative);
         max-width: 350px;
-        height: 35px;
-        background-color: $color_primario;
-        color: $color_secundario;
-        font-size: 16px;
-        border: 3px solid $color_quinto;
-        box-shadow: 5px 5px 5px $color_sombra;
-        border-radius: 5px;
-        position: relative;
     }
     .boton_busqueda{
         i{
@@ -555,6 +562,7 @@ aside{
 }
 
 .redes_ul{
+    width: 100%;
     @include reseteado(0, 0);
     background-color: $color_primario;
     padding: 10px 0;
@@ -841,7 +849,7 @@ aside{
     img{
         width: 100%;
         height: 180px;
-        border-top-left-radius: 27px;
+        border-top-left-radius: 25px;
         border-top-right-radius: 27px;
     }
  }
@@ -867,7 +875,83 @@ aside{
 }
  
 /*Acomodando con estilos el footer*/
-                        
-
  
+footer{
+    background-color: $color_primario;
+    @include caja_flexible(column-reverse, center, stretch, wrap);
+    .footer_links{
+        @include caja_flexible(column, center, center, wrap);
+    }
+}
+
+.redes_foot{
+    background-color: $color_tercero;
+    max-width: 500px;
+}
+
+/*Estilos al formulario*/
+
+.formulario{
+    @include caja_flexible(column, center, center, nowrap);
+    width: 70%;
+    @include centrado();
+    background-color: $color_quinto;
+    box-shadow: inset 4px 4px 15px 10px $color_sombra, 2px 2px 5px rgba(255, 255, 255, 0.5);
+    padding-bottom: 20px;
+    max-width: 400px;
+    h2{
+        color: $color_secundario;
+        font-weight: 200;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 2px
+    }
+}
+
+.form_mail{
+    @include caja_flexible(column, center, flex-start, nowrap);
+    gap: 10px;
+    .campos{
+        @include caja_flexible(column, center, flex-start, nowrap); 
+        gap: 2px;
+        width: 90%;
+        @include centrado();
+    }
+}
+
+.etiqueta{
+    color: $color_secundario;
+}
+
+.campo_text,
+.campo{
+    @include campo_estilos(100%, 35px, $color_primario, $color_secundario,
+        16px , 3px, $color_quinto, 5px, 5px, 5px, $color_sombra, 5px, relative);
+}
+
+.campo_text{
+    height: 80px;
+}
+
+.boton_enviar{
+    align-self: flex-end;
+    margin-right: 15px;
+    padding: 5px 20px;
+    border: 3px solid $color_quinto;
+    box-shadow: 5px 5px 5px $color_sombra, inset 2px 2px 2px $color_sombra;
+    background-color: $color_quinto;
+    font-size: 14px;
+    font-weight: 700;
+    color: $color_secundario;
+    letter-spacing: 2px;
+    transition: all .3s linear;
+    cursor: pointer;
+    &:hover{
+        background-color: $color_primario;
+    }
+}
+
+
+
+
 

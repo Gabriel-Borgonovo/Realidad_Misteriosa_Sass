@@ -307,9 +307,8 @@ aside {
   align-items: center;
   flex-wrap: nowrap;
   gap: 10px; }
-  .busqueda #buscar {
+  .busqueda .campo_busqueda {
     width: 90%;
-    max-width: 350px;
     height: 35px;
     background-color: #131014;
     color: #FFF;
@@ -317,7 +316,8 @@ aside {
     border: 3px solid #0a85f8;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    position: relative; }
+    position: relative;
+    max-width: 350px; }
   .busqueda .boton_busqueda i {
     color: #FFF;
     position: absolute;
@@ -452,6 +452,7 @@ aside {
   text-align: center; }
 
 .redes_ul {
+  width: 100%;
   padding: 0;
   margin: 0;
   background-color: #131014;
@@ -723,7 +724,7 @@ aside {
   .colaboradores_article img {
     width: 100%;
     height: 180px;
-    border-top-left-radius: 27px;
+    border-top-left-radius: 25px;
     border-top-right-radius: 27px; }
 
 .colaboradores_text {
@@ -749,3 +750,93 @@ aside {
     margin-top: 5px; }
 
 /*Acomodando con estilos el footer*/
+footer {
+  background-color: #131014;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap; }
+  footer .footer_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+
+.redes_foot {
+  background-color: #595b6e;
+  max-width: 500px; }
+
+/*Estilos al formulario*/
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0a85f8;
+  box-shadow: inset 4px 4px 15px 10px rgba(0, 0, 0, 0.5), 2px 2px 5px rgba(255, 255, 255, 0.5);
+  padding-bottom: 20px;
+  max-width: 400px; }
+  .formulario h2 {
+    color: #FFF;
+    font-weight: 200;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
+.form_mail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 10px; }
+  .form_mail .campos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 2px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+
+.etiqueta {
+  color: #FFF; }
+
+.campo_text,
+.campo {
+  width: 100%;
+  height: 35px;
+  background-color: #131014;
+  color: #FFF;
+  font-size: 16px;
+  border: 3px solid #0a85f8;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  position: relative; }
+
+.campo_text {
+  height: 80px; }
+
+.boton_enviar {
+  align-self: flex-end;
+  margin-right: 15px;
+  padding: 5px 20px;
+  border: 3px solid #0a85f8;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5), inset 2px 2px 2px rgba(0, 0, 0, 0.5);
+  background-color: #0a85f8;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFF;
+  letter-spacing: 2px;
+  transition: all .3s linear;
+  cursor: pointer; }
+  .boton_enviar:hover {
+    background-color: #131014; }

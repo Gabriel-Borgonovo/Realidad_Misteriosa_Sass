@@ -306,7 +306,7 @@
                 <!-- construcción del buscador -->
         
                 <form action="index.html" method="get" class="busqueda">
-                    <input type="search" placeholder="Has tu búsqueda" id="buscar" />
+                    <input type="search" placeholder="Has tu búsqueda" id="buscar" class="campo_busqueda" />
                     <div class="boton_busqueda">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="submit" value="Buscar" />
@@ -420,7 +420,7 @@
                     <li class="footer_links_li"><a href="#pelis">Recomendaciones</a></li>
                 </ul>
 
-                <ul class="redes_ul">
+                <ul class="redes_ul redes_foot">
                     <li class="redes_li">
                         <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                     </li> 
@@ -452,15 +452,15 @@
                 <form action="index.html" id="form_mail" class="form_mail">
                     <div class="campos">
                         <label for="email" class="etiqueta">Email:</label>
-                        <input type="email" placeholder="ej:tunombre@gmail.com" name="email" id="email" required class="campo_text campo" />
+                        <input type="email" placeholder="ej:tunombre@gmail.com" name="email" id="email" required class="campo" />
                     </div>
                     <div class="campos">
                         <label for="motivo" class="etiqueta">Motivo:</label>
-                        <input type="text" placeholder="motivo" name="motivo" id="motivo" required class="campo_text campo" />
+                        <input type="text" placeholder="motivo" name="motivo" id="motivo" required class="campo" />
                     </div>
                     <div class="campos">
                         <label for="mensaje" class="etiqueta">Mensaje:</label>
-                        <textarea cols="30" rows="5" placeholder="Tu mensaje" name="mensaje" id="mensaje" required class="campo_text mensaje"></textarea>
+                        <textarea cols="30" rows="5" placeholder="Tu mensaje" name="mensaje" id="mensaje" required class="campo_text"></textarea>
                     </div>
                     <input type="submit" class="boton_enviar" />
                 </form> 
