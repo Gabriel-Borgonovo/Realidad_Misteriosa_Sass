@@ -1001,6 +1001,119 @@ footer{
  }
 
 
+/*-------------------------------------------------------------*/
+
+
+/* seccion historias */
+
+
+.body_historias{
+    color: $color_secundario;
+}
+
+.header_secciones{
+    height: 56px;
+}
+
+li{
+    .estilos_links{
+        color: $color_secundario !important;
+        font-weight: 400;
+        &:hover{
+            color: $color_quinto !important;
+        }
+    }   
+}
+
+.color_nav{
+    background-color: $color_primario !important;
+}
+
+.ancho_ul{
+    width: 70%;
+    @include centrado();
+}
+
+.main_historias{
+    width: 90%;
+    @include centrado();
+}
+
+.body_historias{
+    background-color: $color_secundario;
+    color: $color_p;
+}
+
+.titulo_historias{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.la_historia{
+    margin-bottom: 30px;
+    background-color: $color_tercero;
+    color: $color_p;
+    padding: 10px;
+    box-shadow: 10px 10px 10px $color_sombra;
+}
+
+.titulo_h{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.contiene_historia_img{
+    width: 100%;
+    text-align: center;
+}
+
+.contiene_historia_img{
+    img{
+        width: 100%;
+    } 
+} 
+
+.contiene_km_img{
+    width: 100%;
+    text-align: center;
+}
+
+.contiene_km_img{
+    .km_img{
+        width: 70%;
+        max-width: 400px;
+    }
+} 
+
+
+.etiqueta{
+    color: $color_secundario;
+}
+
+.color_p{
+    p{
+        font-weight: 500;
+        color: $color_p;
+    }
+} 
+
+.copyright{
+    p{
+        color: $color_secundario;
+    }
+} 
+
+.f_h{
+    padding-top: 20px;
+    h2{
+        font-weight: 600;
+    }
+}
+
+
+
+
  /* Reglas o Media queries */
 
 @media screen and (min-width: 760px) {
