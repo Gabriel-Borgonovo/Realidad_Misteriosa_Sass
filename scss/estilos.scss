@@ -1111,6 +1111,246 @@ li{
     }
 }
 
+/*-----------------------------------------------------------------*/
+
+/*Estilos a la sección del foro*/
+
+.main_foro{
+    background-color: $color_secundario;
+}
+
+.grid_foro{
+    width: 90%;
+    max-width: 900px;
+    @include centrado();
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    grid-template-areas: "titulo_foro titulo_foro"
+                          "comentarios aside_f"
+                          "escribir escribir";
+    .foro_h2{
+        grid-area: titulo_foro;
+    }
+
+    .charla{
+        grid-area: comentarios;
+        @include reseteado(0, 0);
+    }
+
+    .aside_foro{
+        grid-area: aside_f;
+        @include reseteado(0, 0);
+    }
+
+    .form_comentario{
+        grid-area: escribir;
+    }
+
+    .titulo_foro{
+        text-align: center; 
+    }
+}
+
+
+.card_foro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    background-color: $color_primario;
+}
+
+.card_foro_cont_img{
+    img{
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        margin-left: 10px;
+        margin-top: 10px;
+        border: 2px solid $color_secundario;
+    }
+}
+
+.card_foro_cont_text{
+    h2{
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        margin: 0;
+        margin-left: 10px;
+        color: $color_secundario;
+    }
+    p{
+        background-color: $color_secundario;
+        color: $color_p;
+        width: 90%;
+        padding: 10px;
+        @include centrado();
+        border-radius: 15px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+} 
+
+
+.card_foro_cont_botones{
+    display: flex;
+    margin-left: 10px;
+    gap: 15px;
+    padding: 10px;
+    color: $color_quinto;
+    cursor: pointer;
+}
+
+.comenta_foro,
+.me_gusta{
+    span{
+        color: $color_secundario;
+    }
+}
+
+.respuesta{
+    width: 100%;
+}
+
+.card_foro_cont_text{
+    .p_resp{
+        background-color: rgb(132, 185, 235);
+    } 
+} 
+
+/* Formulario para comentar en el foro */
+
+.form_comentario{
+    background-color: $color_primario;
+    @include caja_flexible(column, center, flex-start, nowrap);
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 10px 0;
+    box-shadow: 10px 10px 10px $color_sombra;
+    border: .2px solid rgba(0, 0, 0, 0.199);
+}
+
+.h2_comen{
+    width: 100%;
+    h2{
+        color: $color_secundario;
+        font-size: 18px;
+        font-weight: 400;
+        @include reseteado(0, 0);
+        width: 90%;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+    }
+} 
+
+.hace_comentario{
+    width: 100%;
+    height: fit-content;
+    .c_com{
+        width: 95%;
+        @include centrado();
+        background-color: $color_secundario;
+        color: $color_primario;
+        margin-left: 20px;
+    }
+}
+
+.contiene_botones_comentarios{
+   @include caja_flexible(row, flex-end, center, nowrap);
+    gap: 15px;
+    width: 90%;
+    @include centrado();
+    margin-top: 10px;
+    .boton_foro{
+        width: 30px;
+        height: 30px;
+        color: $color_secundario;
+        @include fondo_imagen();
+        background-color: transparent;
+        font-size: 0;
+        border: none;
+        cursor: pointer;
+    }  
+    .env{
+        background-image: url(../icons/foro/enviar-mensaje.png);
+    }
+    .borr{
+        background-image: url(../icons/foro/borrar.png);
+    }
+    .subir{
+        background-image: url(../icons/foro/subir.png);
+    }
+    .emo{
+        background-image: url(../icons/foro/feliz.png);
+    }
+}
+
+.f_foro{
+    margin-top: 0;
+}
+
+
+/* Estilos al aside de usuarios */
+
+.aside_foro{
+    width: 100%;
+    background-color: $color_primario;
+    border-left: 5px solid $color_quinto;
+    border-right: 5px solid $color_quinto;
+    box-shadow: 10px 0 10px $color_sombra;
+    border-radius: 0px;
+    margin-top: 0;
+    @include caja_flexible(column, space-between, center, nowrap);
+    gap: 20px;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.user_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+    .verde{
+        border: 3px solid lime;
+    }
+    .rojo{
+        border: 3px solid red;
+    }
+}
+
+.user{
+    text-align: center;
+    span{
+        font-size: 12px;
+        font-weight: 700;
+        color: $color_secundario;
+    }
+}
+
+.icono_usuarios{
+    background-color: $color_quinto;
+    align-self: stretch;
+    text-align: center;
+    padding: 10px 0;
+    i{
+        color: $color_secundario;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
 
 
 

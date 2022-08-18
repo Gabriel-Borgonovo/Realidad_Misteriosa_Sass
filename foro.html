@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/5389a2bf4d.js" crossorigin="anonymous"></script> 
 
-    <link rel="stylesheet" href="css/stylesc.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
     <title>Foro</title>
 </head>
 <body>
@@ -121,9 +121,8 @@
                 <div class="user">
                     <div class="conectado">
                         <div class="user_img">
-                            <img src="images/jason.webp" alt="jason" title="jason" />
+                            <img src="images/jason.webp" alt="jason" title="jason" class="verde" />
                         </div>
-                        <div class="p"><p>conectado</p></div>
                     </div>
                     <span>Jason Voorhees</span>
                 </div>
@@ -131,9 +130,8 @@
                 <div class="user">
                     <div class="conectado">
                         <div class="user_img">
-                            <img src="images/chucky.webp" alt="chucky" title="chucky" />
+                            <img src="images/chucky.webp" alt="chucky" title="chucky" class="verde" />
                         </div>
-                        <div class="p chucky"><p>conectado</p></div>
                     </div>
                     <span>Chucky</span>
                 </div>
@@ -141,9 +139,8 @@
                 <div class="user">
                     <div class="conectado">
                         <div class= "user_img">
-                            <img src="images/linda.jpg" alt="linda" title="linda" />
+                            <img src="images/linda.jpg" alt="linda" title="linda" class="rojo" />
                         </div>
-                        <div class="p linda"><p>conectado</p></div>
                     </div>
                     <span>Linda Blair</span>
                 </div>
@@ -151,9 +148,8 @@
                 <div class="user">
                     <div class="conectado">
                         <div class= "user_img">
-                            <img src="images/scream.jpg" alt="scream" title="scream" />
+                            <img src="images/scream.jpg" alt="scream" title="scream" class="rojo" />
                         </div>
-                        <div class="p scream"><p>conectado</p></div>
                     </div>
                     <span>Scream</span>
                 </div>
@@ -161,9 +157,8 @@
                 <div class="user">
                     <div class="conectado">
                         <div class= "user_img">
-                            <img src="images/carrie.webp" alt="carrie" title="carrie" />
+                            <img src="images/carrie.webp" alt="carrie" title="carrie" class="verde" />
                         </div>
-                        <div class="p scream"><p>conectado</p></div>
                     </div>
                     <span>Carrie</span>
                 </div>
@@ -171,9 +166,8 @@
                 <div class="user">
                     <div class="conectado">
                         <div class= "user_img">
-                            <img src="images/vecna.jpg" alt="vecna" title="vecna" />
+                            <img src="images/vecna.jpg" alt="vecna" title="vecna" class="verde" />
                         </div>
-                        <div class="p vecna"><p>conectado</p></div>
                     </div>
                     <span>Vecna</span>
                 </div>
@@ -188,13 +182,13 @@
                 <div class="h2_comen">
                     <h2>Hace tu comentario</h2>
                 </div>
-                <form action="foro.html" >
-                    <textarea cols="50" rows="2" name="comentario" class="comentario"></textarea>
+                <form action="foro.html" class="hace_comentario">
+                    <textarea cols="50" rows="2" name="comentario" class="campo c_com" placeholder="Escribí tu comentario"></textarea>
                     <div class="contiene_botones_comentarios">
                         <input type="submit" class="boton_foro env" />
                         <input type="reset" class="boton_foro borr" />
-                        <button class="boton_foro adj">adjuntar</button>
-                        <button class="boton_foro emo">emojis</button>
+                        <button class="boton_foro subir">subir</button>
+                        <button class="boton_foro emo">emoji</button>
                     </div>
                 </form>
             </section>
@@ -205,7 +199,7 @@
 
     <!-- Pie de página -->
 
-    <footer class="footer f_foro">
+    <footer class="footer">
         <div class="footer_links">
             <h2>Enlaces de la página</h2>
             <ul class="footer_links_ul">
@@ -213,18 +207,30 @@
                 <li class="footer_links_li"><a href="historias.html">Historias</a></li>
                 <li class="footer_links_li"><a href="foro.html">Foro</a></li>
                 <li class="footer_links_li"><a href="login.html">Login</a></li>
-                <li class="footer_links_li"><a href="index.html#q-somos">Quienes somos</a></li>
-                <li class="footer_links_li"><a href="index.html#categorias">categorias</a></li>
-                <li class="footer_links_li"><a href="index.html#pelis">Recomendaciones</a></li>
+                <li class="footer_links_li"><a href="#q-somos">Quienes somos</a></li>
+                <li class="footer_links_li"><a href="#categorias">Categorias</a></li>
+                <li class="footer_links_li"><a href="#pelis">Recomendaciones</a></li>
             </ul>
 
-            <ul class="redes_ul pie_pag">
-                <li class="redes_li"><a href="https://www.facebook.com/" target="_blank" class="facebook">Faceebook</a></li> 
-                <li class="redes_li"><a href="https://www.youtube.com/" target="_blank" class="youtube">Youtube</a></li>
-                <li class="redes_li"><a href="https://www.instagram.com/" target="_blank" class="instagram">Instagram</a></li>
-                <li class="redes_li"><a href="https://web.telegram.org/k/" target="_blank" class="telegram">Telegram</a></li>
-                <li class="redes_li"><a href="https://www.tiktok.com/es/" target="_blank" class="tiktok">TikTok</a></li>
-                <li class="redes_li"><a href="https://twitter.com/?lang=es" target="_blank" class="twitter">Twitter</a></li>
+            <ul class="redes_ul redes_foot">
+                <li class="redes_li">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </li> 
+                <li class="redes_li">
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li class="redes_li">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="redes_li">
+                    <a href="https://web.telegram.org/k/" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                </li>
+                <li class="redes_li">
+                    <a href="https://www.tiktok.com/es/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </li>
+                <li class="redes_li">
+                    <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </li>
             </ul>
 
             <div class="copyright">
@@ -238,25 +244,25 @@
             <form action="index.html" id="form_mail" class="form_mail">
                 <div class="campos">
                     <label for="email" class="etiqueta">Email:</label>
-                    <input type="email" placeholder="ej:tunombre@gmail.com" name="email" id="email" required class="campo_text campo" />
+                    <input type="email" placeholder="ej:tunombre@gmail.com" name="email" id="email" required class="campo" />
                 </div>
                 <div class="campos">
                     <label for="motivo" class="etiqueta">Motivo:</label>
-                    <input type="text" placeholder="motivo" name="motivo" id="motivo" required class="campo_text campo" />
+                    <input type="text" placeholder="motivo" name="motivo" id="motivo" required class="campo" />
                 </div>
                 <div class="campos">
                     <label for="mensaje" class="etiqueta">Mensaje:</label>
-                    <textarea cols="30" rows="5" placeholder="Tu mensaje" name="mensaje" id="mensaje" required class="campo_text mensaje"></textarea>
+                    <textarea cols="30" rows="5" placeholder="Tu mensaje" name="mensaje" id="mensaje" required class="campo_text"></textarea>
                 </div>
                 <input type="submit" class="boton_enviar" />
             </form> 
         </div>
-
+        
         <div class="contiene_whatsapp">
             <a href="https://web.whatsapp.com/" target="_blank" class="whatsapp">Whatsapp</a>
         </div>
 
-    </footer>
+        </footer>
 
 </body>
 </html>
