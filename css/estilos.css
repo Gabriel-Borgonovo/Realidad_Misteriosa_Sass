@@ -1259,7 +1259,7 @@ li .estilos_links {
 /* estilos al formulario de registro */
 .main_registro {
   background-color: #FFF;
-  height: 100vh;
+  height: 150vh;
   margin-bottom: 130px; }
 
 .reg_pag {
@@ -1299,6 +1299,9 @@ li .estilos_links {
 
 .circulos_radio label {
   color: #FFF; }
+
+.iniciar {
+  width: 80%; }
 
 /* Reglas o Media queries */
 @media screen and (min-width: 760px) {
