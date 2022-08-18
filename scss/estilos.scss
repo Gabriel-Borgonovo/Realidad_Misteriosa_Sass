@@ -1249,7 +1249,7 @@ li{
     width: 100%;
     height: fit-content;
     .c_com{
-        width: 95%;
+        width: 85%;
         @include centrado();
         background-color: $color_secundario;
         color: $color_primario;
@@ -1258,11 +1258,12 @@ li{
 }
 
 .contiene_botones_comentarios{
-   @include caja_flexible(row, flex-end, center, nowrap);
+   @include caja_flexible(row, flex-start, center, nowrap);
     gap: 15px;
     width: 90%;
     @include centrado();
     margin-top: 10px;
+    margin-left: 20px;
     .boton_foro{
         width: 30px;
         height: 30px;
@@ -1348,11 +1349,14 @@ li{
 }
 
 
+/*---------------------------------------------------------*/
+
 /*Sección login*/
 
+
 .main_login{
-    height: 100vh;
-    padding-bottom: 100px;
+    height: 120vh;
+    padding-bottom: 150px;
 }
 
 .contiene_login{
@@ -1431,7 +1435,60 @@ li{
     }
 }
 
+/*---------------------------------------------------------*/
+
 /*Sección registro*/
+
+/* estilos al formulario de registro */
+
+
+.main_registro{
+    background-color: $color_secundario;
+    height: 100vh;
+    margin-bottom: 130px;
+}
+
+.reg_pag{
+    color: $color_primario;
+    font-weight: 600;
+}
+
+.contiene_form_registro{
+    background-color: $color_primario;
+    width: 80%;
+    max-width: 400px;
+    @include centrado();
+    @include caja_flexible(column, center, center, nowrap);
+    padding: 20px 0;
+    border: 4px solid $color_quinto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px $color_sombra;
+}
+
+.boton_radio{
+    @include caja_flexible(column, center, flex-start, nowrap);
+}
+
+.check{
+    a{
+        color: $color_quinto;
+        &:hover{
+            color: $color_secundario;
+        }
+    }
+} 
+
+.footer_registro{
+    margin-top: 0;
+}
+
+.circulos_radio{
+    label{
+        color: $color_secundario;
+    }
+}
+
+
 
 
 
