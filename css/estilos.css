@@ -175,7 +175,7 @@ img {
   position: absolute;
   z-index: 5;
   width: 10%;
-  opacity: 0;
+  display: none;
   top: 40%;
   animation-name: nave;
   animation-duration: 7s;
@@ -1468,7 +1468,7 @@ li .estilos_links {
     width: 90%;
     grid-template-areas: "box_a box_b box_c box_d"; }
   .slider .monstruo {
-    opacity: 1; }
+    display: inline-block; }
   .section_main {
     width: 85%;
     max-width: 900px; }

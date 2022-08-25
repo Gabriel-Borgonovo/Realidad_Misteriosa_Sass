@@ -276,7 +276,7 @@ img{
         position: absolute;
         z-index: 5;
         width: 10%;
-        opacity: 0;
+        display: none; 
         top: 40%;
         animation-name: nave;
         animation-duration: 7s;
@@ -1752,7 +1752,7 @@ li{
 
     .slider{
         .monstruo{
-            opacity: 1;
+            display: inline-block;
         }
     }
 
