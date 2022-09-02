@@ -326,7 +326,7 @@ aside {
   margin-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #595b6e;
+  background-color: #9da0be;
   padding-bottom: 50px;
   border-radius: 20px; }
   aside h2 {
@@ -888,7 +888,9 @@ footer {
   align-items: center;
   flex-wrap: nowrap;
   gap: 20px;
-  width: 100%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 70px; }
   .footer_links h2 {
     color: #FFF;
@@ -944,6 +946,9 @@ footer {
 .header_secciones {
   height: 56px; }
 
+.burguer {
+  background-color: #FFF !important; }
+
 li .estilos_links {
   color: #FFF !important;
   font-weight: 400; }
@@ -973,7 +978,7 @@ li .estilos_links {
 
 .la_historia {
   margin-bottom: 30px;
-  background-color: #595b6e;
+  background-color: #9da0be;
   color: #0f0f16;
   padding: 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); }
@@ -1376,6 +1381,8 @@ li .estilos_links {
         color: #FFF;
         font-size: 12px;
         font-weight: 400; }
+  #check:checked ~ .ul_menu {
+    height: 0; }
   .slider_sections {
     width: 70%; }
   .grid_contiene_todo {
@@ -1467,8 +1474,6 @@ li .estilos_links {
   .slider_sections {
     width: 90%;
     grid-template-areas: "box_a box_b box_c box_d"; }
-  .slider .monstruo {
-    display: inline-block; }
   .section_main {
     width: 85%;
     max-width: 900px; }
@@ -1510,6 +1515,8 @@ li .estilos_links {
     grid-template-areas: "title title title . . ." "hr_a hr_a hr_a hr_a hr_a hr_a" "titulo_b titulo_b titulo_b . . ." "hr_b hr_b hr_c hr_c hr_d hr_d"; }
   .grid_d_img > img {
     height: 190px; }
+  .slider .monstruo {
+    display: inline-block; }
   /* foro */
   .aside_foro {
     width: 100%;
