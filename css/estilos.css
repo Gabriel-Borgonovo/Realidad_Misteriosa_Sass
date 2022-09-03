@@ -1385,6 +1385,8 @@ li .estilos_links {
     height: 0; }
   .slider_sections {
     width: 70%; }
+  .slider_sections_box p {
+    font-size: 15px; }
   .grid_contiene_todo {
     grid-template-areas: "header header header header header header" "imagen_s imagen_s imagen_s imagen_s imagen_s imagen_s" "slider slider slider slider slider slider" "section section section section section section" "main main main aside aside aside"  "main main main . . ." "h_dest h_dest h_dest h_dest h_dest h_dest" "quie_s quie_s quie_s quie_s quie_s quie_s" "col col col col col col" "footer footer footer footer footer footer"; }
   .slider .centrar_titulos {
@@ -1413,6 +1415,8 @@ li .estilos_links {
   .image_main_section > img {
     width: 100%;
     max-width: 750px; }
+  .text_main_section p {
+    font-size: 16px; }
   /*aside*/
   aside {
     width: 100%;
@@ -1457,6 +1461,8 @@ li .estilos_links {
       grid-row: 2/6; }
   .image_qs_section > img {
     width: 100%; }
+  .text_qs_section p {
+    font-size: 16px; }
   /*footer*/
   footer {
     display: flex;

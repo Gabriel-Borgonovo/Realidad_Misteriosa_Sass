@@ -1604,6 +1604,13 @@ li{
         width: 70%;
     }
 
+    .slider_sections_box {
+        p{
+            font-size: 15px;
+        }
+    } 
+    
+
     .grid_contiene_todo{
         grid-template-areas: "header header header header header header"
                              "imagen_s imagen_s imagen_s imagen_s imagen_s imagen_s"
@@ -1653,7 +1660,12 @@ li{
     .image_main_section > img{
         width: 100%;
         max-width: 750px;
+    }
 
+    .text_main_section{
+        p{
+            font-size: 16px;
+        }
     }
 
     /*aside*/
@@ -1721,6 +1733,12 @@ li{
 
     .image_qs_section > img{
         width: 100%;
+    }
+
+    .text_qs_section{
+        p{
+            font-size: 16px;
+        }
     }
 
 
